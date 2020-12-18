@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f31e962a-5395-4585-8a35-8d3e0f00fe73" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\tools\localRepository" />
+        <option name="mavenHome" value="D:/tools/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\tools\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gNpF8Rq8eHyS0kYZOwBVs4Stl8" />
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/css" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\whlg\shoppingWeb\src\main\resources\static" />
+      <recent name="E:\IdeaProject\whlg\shoppingWeb\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zhongruan.controller" />
+      <recent name="com.zhongruan.service.impl" />
+      <recent name="com.zhongruan.service" />
+      <recent name="com.zhongruan.dao" />
+      <recent name="com.zhongruan.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\whlg\shoppingWeb\src\main\resources\static\css" />
+      <recent name="E:\IdeaProject\whlg\shoppingWeb\src\main\resources\templates" />
+      <recent name="E:\IdeaProject\whlg\shoppingWeb\src\main\resources\templates\admin" />
+      <recent name="E:\IdeaProject\whlg\shoppingWeb\src\main\resources\static" />
+      <recent name="E:\IdeaProject\whlg\shoppingWeb\src\main\resources\static\js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ShoppingWebApplication">
+    <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhongruan.util.MD5Util" />
+      <module name="shoppingWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhongruan.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="shoppingWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhongruan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhongruan.ShoppingWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ShoppingWebApplication" />
+        <item itemvalue="Application.MD5Util" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f31e962a-5395-4585-8a35-8d3e0f00fe73" name="Default Changelist" comment="" />
+      <created>1597964797944</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597964797944</updated>
+      <workItem from="1597964802037" duration="4519000" />
+      <workItem from="1597997368945" duration="235000" />
+      <workItem from="1597998322334" duration="17886000" />
+      <workItem from="1598021949910" duration="57000" />
+      <workItem from="1598053068099" duration="44351000" />
+      <workItem from="1598137555547" duration="4978000" />
+      <workItem from="1598156460571" duration="29764000" />
+      <workItem from="1598223674152" duration="1341000" />
+      <workItem from="1598233407319" duration="36453000" />
+      <workItem from="1598308137029" duration="28474000" />
+      <workItem from="1598338165565" duration="22946000" />
+      <workItem from="1598395368737" duration="5436000" />
+      <workItem from="1598421025646" duration="4818000" />
+      <workItem from="1598440491160" duration="1474000" />
+      <workItem from="1598450549027" duration="594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1598327480781">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598322716779" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598327480781" />
+    <state width="633" height="438" key="DebuggerActiveHint" timestamp="1598177056066">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="633" height="438" key="DebuggerActiveHint/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598070025765" />
+    <state width="633" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1598177056066" />
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1598343097370">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598106610929" />
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598343097370" />
+    <state width="1493" height="4" key="GridCell.Tab.0.bottom" timestamp="1598443841475">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387570" />
+    <state width="1493" height="4" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598443841475" />
+    <state width="1493" height="4" key="GridCell.Tab.0.center" timestamp="1598443841473">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387570" />
+    <state width="1493" height="4" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598443841473" />
+    <state width="1493" height="4" key="GridCell.Tab.0.left" timestamp="1598443841473">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387570" />
+    <state width="1493" height="4" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598443841473" />
+    <state width="1493" height="4" key="GridCell.Tab.0.right" timestamp="1598443841474">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387570" />
+    <state width="1493" height="4" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598443841474" />
+    <state width="1493" height="4" key="GridCell.Tab.1.bottom" timestamp="1598443841476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387571" />
+    <state width="1493" height="4" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598443841476" />
+    <state width="1493" height="4" key="GridCell.Tab.1.center" timestamp="1598443841476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387571" />
+    <state width="1493" height="4" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1598443841476" />
+    <state width="1493" height="4" key="GridCell.Tab.1.left" timestamp="1598443841476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387570" />
+    <state width="1493" height="4" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1598443841476" />
+    <state width="1493" height="4" key="GridCell.Tab.1.right" timestamp="1598443841476">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="5" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598434387571" />
+    <state width="1493" height="4" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598443841476" />
+    <state width="1493" height="77" key="GridCell.Tab.2.bottom" timestamp="1598369091320">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="91" key="GridCell.Tab.2.bottom/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598350067141" />
+    <state width="1493" height="77" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598369091320" />
+    <state width="1493" height="77" key="GridCell.Tab.2.center" timestamp="1598369091320">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="91" key="GridCell.Tab.2.center/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598350067141" />
+    <state width="1493" height="77" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1598369091320" />
+    <state width="1493" height="77" key="GridCell.Tab.2.left" timestamp="1598369091320">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="91" key="GridCell.Tab.2.left/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598350067141" />
+    <state width="1493" height="77" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1598369091320" />
+    <state width="1493" height="77" key="GridCell.Tab.2.right" timestamp="1598369091320">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="91" key="GridCell.Tab.2.right/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598350067141" />
+    <state width="1493" height="77" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1598369091320" />
+    <state x="379" y="99" key="Maven.ArtifactSearchDialog" timestamp="1597965159063">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="379" y="99" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1597965159063" />
+    <state x="476" y="57" key="SettingsEditor" timestamp="1598156507579">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="476" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598156507579" />
+    <state x="313" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1598261923498">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="313" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1598261923498" />
+    <state x="178" y="72" key="new project wizard" timestamp="1597997473482">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="72" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1597997473482" />
+    <state x="429" y="191" key="run.anything.popup" timestamp="1598363770896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="429" y="191" key="run.anything.popup/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598273498198" />
+    <state x="429" y="191" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598363770896" />
+    <state x="447" y="110" width="672" height="678" key="search.everywhere.popup" timestamp="1598326396601">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1280.680@0.0.1536.824" timestamp="1598314713431" />
+    <state x="447" y="110" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598326396601" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhongruan/controller/LoginController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhongruan/controller/LoginController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

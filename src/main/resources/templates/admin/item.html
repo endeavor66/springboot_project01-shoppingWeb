@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Simulor - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../../static/assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+
+    <link href="../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../../static/css/icons.min.css" th:href="@{/css/icons.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../../static/css/app.min.css" th:href="@{/css/app.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../../static/css/change.css" th:href="@{/css/change.css}" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left-side-menu">
+
+        <div class="slimscroll-menu">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo text-center mb-4">
+                <a th:href="@{/toIndex}" class="logo text-center mb-4">
+                        <span class="logo-lg">
+                            <img src="http://freemuban.com/view/201810042007/images/logo2.png" th:href="@{/toIndex}" alt="" height="20">
+                        </span>
+                    <span class="logo-sm">
+                            <img src="http://freemuban.com/view/201810042007/images/logo2.png" th:href="@{/toIndex}" alt="" height="24">
+                        </span>
+                    <h3>FashionClub</h3>
+                </a>
+            </a>
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+
+                <ul class="metismenu" id="side-menu">
+
+                    <li class="menu-title">Administrator</li>
+
+                    <li>
+                        <a th:href="@{/admin/toIndex}">
+                            <i class="fe-airplay"></i>
+                            <!--                                    <span class="badge badge-success float-right">08</span>-->
+                            <span> Sale Performance </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="users.html" th:href="@{/admin/user}">
+                            <i class="fe-layers"></i>
+                            <span> User Management </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="fe-briefcase"></i>
+                            <span> Components </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="#" th:href="@{/admin/brands}" class=" m-item item m-mobile-hide" >Brand</a>
+                            </li>
+                            <li>
+                                <a href="#" th:href="@{/admin/tags}" class=" m-item item m-mobile-hide" >Tag</a>
+                            </li>
+                            <li>
+                                <a href="#" th:href="@{/admin/items}" class=" m-item item m-mobile-hide" >Item</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Sidebar -left -->
+    </div>
+</div>
+
+<!-- Left Sidebar End -->
+
+<!-- ============================================================== -->
+<!-- Start Page Content here -->
+<!-- ============================================================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <!--               品牌展示-->
+                <!--中间内容-->
+                <div  class="m-container-small m-padded-tb-big">
+                    <div class="ui container">
+                        <div  class="ui secondary segment form" id="shoppingForm">
+                            <input type="hidden" name="page" >
+                            <div class="inline fields">
+                                <div class="field" width="50px">
+                                    <input type="text" width="50px" name="goodsName" placeholder="Goods name">
+                                </div>
+
+                                <div class="field">
+                                    <div class="ui labeled action input">
+                                        <div class="ui type selection dropdown">
+                                            <input type="hidden" name="brandId">
+                                            <i class="dropdown icon"></i>
+                                            <div class="default text">Brand name</div>
+                                            <div class="menu">
+                                                <div th:each="brand : ${brands}" class="item" data-value="1" th:data-value="${brand.id}" th:text="${brand.brandName}">错误日志</div>
+                                                <!--/*-->
+                                                <div class="item" data-value="2">开发者手册</div>
+                                                <!--*/-->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="field">
+                                    <div class="ui labeled action input">
+                                        <div class="ui type selection dropdown">
+                                            <input type="hidden" name="updateYear">
+                                            <i class="dropdown icon"></i>
+                                            <div class="default text">年份</div>
+                                            <div class="menu">
+                                                <div th:each="updateYear: ${updateYears}" class="item" data-value="1"  th:data-value="${updateYear}" th:text="${updateYear}">错误日志</div>
+                                            </div>
+                                        </div>
+                                        <button id="clear-btn" class="ui compact button">clear</button>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <button  type="button" id="search-btn" class="ui mini teal basic button"><i >research</i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="table-container">
+                            <table th:fragment="itemsList" id="shoppingTable" class="ui compact teal table">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Goods name</th>
+                                    <th>Brand name</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>Update time</th>
+                                    <th>Operation</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr th:each="goods,iterStat : ${page.content}">
+                                    <td th:text="${iterStat.count}">1</td>
+                                    <td th:text="${goods.goodsName}">空军一号</td>
+                                    <td th:text="${goods.brand.brandName}">耐克</td>
+                                    <td th:text="${goods.price}">800元</td>
+                                    <td th:text="${goods.stock}">1000件</td>
+                                    <td th:text="${goods.updateTime}">2019-10-02 09:45</td>
+                                    <td>
+                                        <a href="#" th:href="@{/admin/items/input/{id}(id=${goods.id})}" class="ui mini teal basic button">change</a>
+                                        <a href="#" th:href="@{/admin/items/delete/{id}(id=${goods.id})}" class="ui mini red basic button">delete</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th colspan="6">
+
+                                        <div class="ui mini pagination menu" th:if="${page.totalPages}>1" >
+                                            <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">Page Up</a>
+                                            <a onclick="page(this)" th:attr="data-page=${page.number}+1" class=" item" th:unless="${page.last}">Page Down</a>
+                                        </div>
+                                        <a href="#" th:href="@{/admin/items/input/{id}(id=-1)}" class="ui mini right floated teal basic button">add</a>
+                                    </th>
+                                </tr>
+                                </tfoot>
+                            </table>
+
+                            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                                <i class="close icon"></i>
+                                <div class="header">提示：</div>
+                                <p th:text="${message}">恭喜，操作成功！</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end row -->
+</div> <!-- container -->
+</div> <!-- content -->
+
+<!-- App js -->
+<script src="js/vendor.min.js"></script>
+<script src="js/app.min.js"></script>
+
+<!-- Plugins js -->
+<script src="js/vendor/Chart.bundle.js"></script>
+<script src="js/vendor/jquery.sparkline.min.js"></script>
+<script src="js/vendor/jquery.knob.min.js"></script>
+
+<script src="js/pages/dashboard.init.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+
+    $('#clear-btn')
+        .on('click', function() {
+            $('.ui.type.dropdown')
+                .dropdown('clear')
+            ;
+        });
+
+    function page(obj){
+        $("[name='page']").val($(obj).data("page"));
+        load();
+    }
+
+    $("#search-btn").click(function () {
+        $("[name='page']").val(0);
+        load();
+    });
+
+    function load() {
+        $("#table-container").load("/admin/items/search",{
+                goodsName : $("[name='goodsName']").val(),
+                brandId : $("[name='brandId']").val(),
+                updateYear : $("[name='updateYear']").val(),
+                page : $("[name='page']").val()
+            }
+        )
+    }
+</script>
+
+</body>
+</html>

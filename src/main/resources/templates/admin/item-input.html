@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Simulor - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../../static/assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="../../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../../static/css/icons.min.css" th:href="@{/css/icons.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../../static/css/app.min.css" th:href="@{/css/app.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../../static/css/change.css" th:href="@{/css/change.css}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="left-side-menu">
+
+        <div class="slimscroll-menu" th:replace="admin/_fragment :: common-slimscroll-menu">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo text-center mb-4">
+                <a th:href="@{/toIndex}" class="logo text-center mb-4">
+                        <span class="logo-lg">
+                            <img src="http://freemuban.com/view/201810042007/images/logo2.png" th:href="@{/toIndex}" alt="" height="20">
+                        </span>
+                    <span class="logo-sm">
+                            <img src="http://freemuban.com/view/201810042007/images/logo2.png" th:href="@{/toIndex}" alt="" height="24">
+                        </span>
+                    <h3>FashionClub</h3>
+                </a>
+            </a>
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+
+                <ul class="metismenu" id="side-menu">
+
+                    <li class="menu-title">Administrator</li>
+
+                    <li>
+                        <a th:href="@{/admin/toIndex}">
+                            <i class="fe-airplay"></i>
+                            <!--                                    <span class="badge badge-success float-right">08</span>-->
+                            <span> Sale Performance </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="users.html" th:href="@{/admin/user}">
+                            <i class="fe-layers"></i>
+                            <span> User Management </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="fe-briefcase"></i>
+                            <span> Components </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li>
+                                <a href="#" th:href="@{/admin/brands}" class=" m-item item m-mobile-hide" >Brand</a>
+                            </li>
+                            <li>
+                                <a href="#" th:href="@{/admin/tags}" class=" m-item item m-mobile-hide" >Tag</a>
+                            </li>
+                            <li>
+                                <a href="#" th:href="@{/admin/items}" class=" m-item item m-mobile-hide" >Item</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- End Sidebar -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Sidebar -left -->
+    </div>
+</div>
+
+<!-- Left Sidebar End -->
+
+<!-- ============================================================== -->
+<!-- Start Page Content here -->
+<!-- ============================================================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <!--               品牌展示-->
+                <!--中间内容-->
+                <div  class="m-container m-padded-tb-big">
+                    <div class="ui container">
+                        <form id="goods-form" action="#" th:object="${goods}" th:action="@{/admin/items/input}" method="post" class="ui form">
+                           <!-- <input type="hidden" name="published" th:value="*{published}">-->
+                            <input type="hidden" name="id" th:value="*{id}">
+                            <div class="two fields">
+                            <div class="required field">
+                                <div class="ui left labeled input">
+                                    <label class="ui compact teal basic label">Name</label>
+                                    <input type="text" name="goodsName" placeholder="goods name" th:value="*{goodsName}">
+                                </div>
+                            </div>
+
+                            <div class="required field">
+                                <div class="ui left labeled action input">
+                                    <label class="ui compact teal basic label">Brand name</label>
+                                    <div class="ui fluid selection dropdown">
+                                        <input type="hidden" name="brand.id" th:value="*{brand}!=null ? *{brand.id}">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Brand name</div>
+                                        <div class="menu">
+                                            <div th:each="brand : ${brands}" class="item" data-value="1" th:data-value="${brand.id}" th:text="${brand.brandName}">错误日志</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="ui left labeled action input">
+                                    <label class="ui compact teal basic label">Tag</label>
+                                    <div class="ui fluid selection multiple search  dropdown">
+                                        <input type="hidden" name="tagIds" th:value="*{tagIds}" >
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">tag name</div>
+                                        <div class="menu">
+                                            <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}" th:text="${tag.tagName}">java</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="two fields">
+                                <div class="required field">
+                                    <div class="ui left labeled input">
+                                        <label class="ui compact teal basic label">Price</label>
+                                        <input type="text" name="price" placeholder="Price" th:value="*{price}">
+                                    </div>
+                                </div>
+
+                                <div class="required field">
+                                    <div class="ui left labeled input">
+                                        <label class="ui compact teal basic label">Stock</label>
+                                        <input type="text" name="stock" placeholder="Stock" th:value="*{stock}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="required field">
+                                <div class="ui left labeled input">
+                                    <label class="ui teal basic label">picture</label>
+                                    <input type="text" name="picture" th:value="*{picture}" placeholder="picture address">
+                                </div>
+                            </div>
+
+                            <div class="required field">
+                                <textarea name="description" th:text="*{description}" placeholder="description..." maxlength="200"></textarea>
+                            </div>
+
+                            <div class="ui error message"></div>
+
+                            <div class="ui right aligned container">
+                                <button type="button" class="ui button" onclick="window.history.go(-1)" >return</button>
+                                <button type="button" id="publish-btn" class="ui teal button">submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end row -->
+</div> <!-- container -->
+</div> <!-- content -->
+
+<!-- App js -->
+<script src="js/vendor.min.js"></script>
+<script src="js/app.min.js"></script>
+
+<!-- Plugins js -->
+<script src="js/vendor/Chart.bundle.js"></script>
+<script src="js/vendor/jquery.sparkline.min.js"></script>
+<script src="js/vendor/jquery.knob.min.js"></script>
+
+<script src="js/pages/dashboard.init.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+    $('#publish-btn').click(function () {
+        <!--$('[name="published"]').val(true);-->
+        $('#goods-form').submit();
+    });
+</script>
+
+</body>
+</html>

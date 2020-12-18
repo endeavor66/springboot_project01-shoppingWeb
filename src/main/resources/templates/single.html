@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Single</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- css -->
+<link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"  type="text/css" media="all" />
+<link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}" type="text/css" media="all" />
+<link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}" type="text/css" media="all" />
+<link rel="stylesheet" href="../static/css/flexslider.css" th:href="@{/css/flexslider.css}" type="text/css" media="screen" />
+<!--// css -->
+
+<!-- font -->
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //font -->
+
+<!-- js -->
+<script src="../static/js/jquery-1.11.1.min.js" th:src="@{/js/jquery-1.11.1.min.js}"></script>
+<script src="../static/js/bootstrap.js" th:src="@{/js/bootstrap.js}"></script>
+<script defer src="../static/js/jquery.flexslider.js" th:src="@{/js/jquery.flexslider.js}"></script>
+<script src="../static/js/imagezoom.js" th:src="@{/js/imagezoom.js}"></script>
+<!-- //js --> 
+
+</head>
+<body>
+<div th:replace="_fragment :: header">
+	<div class="header-top-w3layouts">
+		<div class="container">
+			<div class="col-md-6 logo-w3">
+				<a href="index.html"><img src="images/logo2.png" alt=" " /><h1>FASHION<span>CLUB</span></h1></a>
+			</div>
+			<div class="col-md-6 phone-w3l">
+				<ul>
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+					<li>+18045403380</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="header-bottom-w3ls">
+		<div class="container">
+			<div class="col-md-7 navigation-agileits">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header nav_2">
+						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+						<ul class="nav navbar-nav ">
+							<li class=" active"><a href="index.html" class="hyper "><span>Home</span></a></li>
+							<li class="dropdown ">
+								<a href="#" class="dropdown-toggle  hyper" data-toggle="dropdown" ><span>Service<b class="caret"></b></span></a>
+								<ul class="dropdown-menu multi">
+									<div class="row">
+										<div class="col-sm-4">
+											<ul class="multi-column-dropdown">
+
+												<li><a href="login.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Login</a></li>
+												<li><a href="register.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Register</a></li>
+												<li><a href="changePassword.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Change Password</a></li>
+												<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Exit</a></li>
+
+											</ul>
+
+										</div>
+										<div class="col-sm-4">
+											<ul class="multi-column-dropdown">
+												<li><a href="casuals.html"><i class="fa fa-angle-right" aria-hidden="true"></i>My order</a></li>
+												<li><a href="night.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Recharge</a></li>
+												<li><a href="formals.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Check the balance</a></li>
+												<!--												<li><a href="inner.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Inner Wear</a></li>-->
+
+											</ul>
+										</div>
+										<div class="col-sm-4 w3l">
+											<a href="women.html"><img src="images/menu1.jpg" class="img-responsive" alt=""></a>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle hyper" data-toggle="dropdown" ><span> Personal Care <b class="caret"></b></span></a>
+								<ul class="dropdown-menu multi multi1">
+									<div class="row">
+										<div class="col-sm-4">
+											<ul class="multi-column-dropdown">
+												<li><a href="jewellery.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Jewellery </a></li>
+												<li><a href="watches.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Watches</a></li>
+												<li><a href="cosmetics.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Cosmetics</a></li>
+												<li><a href="deos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Deo & Perfumes</a></li>
+
+											</ul>
+
+										</div>
+										<div class="col-sm-4">
+
+											<ul class="multi-column-dropdown">
+												<li><a href="haircare.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Hair Care </a></li>
+												<li><a href="shoes.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Shoes</a></li>
+												<li><a href="handbags.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Handbags</a></li>
+												<li><a href="skincare.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Skin care</a></li>
+
+											</ul>
+
+										</div>
+										<div class="col-sm-4 w3l">
+											<a href="jewellery.html"><img src="images/menu2.jpg" class="img-responsive" alt=""></a>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</ul>
+							</li>
+							<li><a href="about.html" class="hyper"><span>About</span></a></li>
+							<li><a href="contact.html" class="hyper"><span>Contact Us</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$(".dropdown").hover(
+							function() {
+								$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+								$(this).toggleClass('open');
+							},
+							function() {
+								$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+								$(this).toggleClass('open');
+							}
+					);
+				});
+			</script>
+			<div class="col-md-4 search-agileinfo">
+				<form action="#" method="post">
+					<input type="search" name="Search" placeholder="Search for a Product..." required="">
+					<button type="submit" class="btn btn-default search" aria-label="Left Align">
+						<i class="fa fa-search" aria-hidden="true"> </i>
+					</button>
+				</form>
+			</div>
+			<div class="col-md-1 cart-wthree">
+				<div class="cart">
+					<form action="#" method="post" class="last">
+						<input type="hidden" name="cmd" value="_cart" />
+						<input type="hidden" name="display" value="1" />
+						<button class="w3view-cart" type="submit" name="submit" value=""><a href="shoppingCart.html" class="fa fa-cart-arrow-down colorBlack" aria-hidden="true"></a></button>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<div class="products" id="products">
+		<div class="container">  
+			<div class="single-page">
+				<div class="single-page-row" id="detail-21">
+					<div class="col-md-6 single-top-left">	
+						<div class="flexslider">
+							<ul class="slides">
+								<li data-thumb="images/s1.jpg">
+									<div class="thumb-image detail_images"> <img src="../static/images/1.png" data-imagezoom="true" class="img-responsive" alt="" th:src="${goods.picture}"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 single-top-right">
+						<h3 class="item_name" th:text="${goods.goodsName}"> Black Handbag</h3>
+						<div class="single-rating">
+							<ul>
+								<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								<li class="rating"><span th:text="${goods.views}">20</span> views</li>
+								<li class="rating"><span th:text="${goods.sale}">20</span> sale</li>
+							</ul>
+						</div>
+						<div class="single-price">
+							<ul>
+								<li>$<span th:text="${goods.price}">54</span></li>
+							</ul>
+						</div>
+						<p class="single-price-text" th:text="${goods.description}">Fusce a egestas nibh, eget ornare erat. Proin placerat, urna et consequat efficitur, sem odio blandit enim, sit amet euismod turpis est mattis lectus. Vestibulum maximus quam et quam egestas imperdiet. In dignissim auctor viverra. </p>
+						<input type="hidden" id="goodsId" th:value="${goods.id}">
+						<button type="button" class="w3ls-cart" id="addToCartBtn" th:onclick="addToShopCart()"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+					</div>
+				   <div class="clearfix"> </div>  
+				</div>
+				<ul class="lunbotu">
+					<li id="lunbotu1" onclick="ClickLi(this)"></li>
+					<li id="lunbotu2" onclick="ClickLi(this)"></li>
+					<li id="lunbotu3" onclick="ClickLi(this)"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!--recommend-->
+<div class="clearFloat">
+	<div class="recommend">
+	<div class="list">推荐榜单</div>
+	<div th:each="goods, goodsStat : ${top}">
+		<div class="reco-header">
+			<h4><div class="circle" th:text="${goodsStat.count}">1</div>热销<span th:text="${goods.sale}">72220</span>件</h4>
+			<a th:href="@{/order/toGoodsDetail(gid=${goods.id})}">
+				<div class="reco-img">
+					<img src="images/banner2.png" alt="" th:src="${goods.picture}">
+					<span>[[${goods.goodsName}]]</span>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+	<!--Appriase-->
+	<div class="appraise">
+	<div class="header">
+		All Appraise：
+	</div>
+	<div class="body">
+		<table>
+			<tr th:each="order : ${page.content}">
+				<td><label for="" th:text="${order.user.username}">lihua</label>:</td>
+				<td ><textarea class="textArea" th:text="${order.comment}">样式美观，推荐！</textarea></td>
+			</tr>
+		</table>
+		<div class="box">
+			<input type="hidden" name="page">
+			<a onclick="page(this)" th:attr="data-page=${page.number}-1" class="prev" th:unless="${page.first}">上一页</a>
+			<a onclick="page(this)" th:attr="data-page=${page.number}+1" class="next" th:unless="${page.last}">下一页</a>
+			<span th:if="${page.totalPages > 0}">共<span th:text="${page.totalPages}">2</span>页，当前第<span th:text="${page.number+1}">1</span>页</span>
+		</div>
+	</div>
+</div>
+	<div class="clearfix"></div>
+</div>
+
+
+<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="col-md-6 w3agile_newsletter_left">
+				<h2>Newsletter</h2>
+				<p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
+			</div>
+			<div class="col-md-6 w3agile_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="Subscribe" />
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter -->
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 footer-grids fgd1">
+		<a href="index.html"><img src="images/logo2.png" alt=" " /><h3>FASHION<span>CLUB</span></h3></a>
+		<ul>
+			<li>1234k Avenue, 4th block,</li>
+			<li>New York City.</li>
+			<li><a href="mailto:info@example.com">info@example.com</a></li>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		</ul>
+		</div>
+		<div class="col-md-3 footer-grids fgd2">
+			<h4>Information</h4> 
+			<ul>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="icons.html">Web Icons</a></li>
+				<li><a href="typography.html">Typography</a></li>
+				<li><a href="faq.html">FAQ's</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 footer-grids fgd3">
+			<h4>Shop</h4> 
+			<ul>
+				<li><a href="jewellery.html">Jewellery</a></li>
+				<li><a href="cosmetics.html">Cosmetics</a></li>
+				<li><a href="Shoes.html">Shoes</a></li>
+				<li><a href="deos.html">Deos</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 footer-grids fgd4">
+			<h4>My Account</h4> 
+			<ul>
+				
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="recommended.html">Recommended </a></li>
+				<li><a href="payment.html">Payments</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+		<p class="copy-right">Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://www.freemoban.com/">www.freemoban.com</a></p>
+	</div>
+</div>
+	<!-- cart-js -->
+	<script src="js/minicart.js"></script>
+	<script>
+        w3ls1.render();
+
+        w3ls1.cart.on('w3sb1_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        			items[i].set('shipping', 0);
+        			items[i].set('shipping2', 0);
+        		}
+        	}
+        });
+
+		// Can also be used with $(document).ready()
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				controlNav: "thumbnails"
+			});
+		});
+
+		/**
+		 * 轮播图点击切换
+		 * @param element
+		 * @constructor
+		 */
+		function ClickLi(element){
+			if(element.id==="lunbotu1"){
+				$(products).css("background","url('images/alert.png') no-repeat center 0px")
+			}
+			if(element.id==="lunbotu2"){
+				$(products).css("background","url('images/alert.png') no-repeat center 0px")
+			}
+			if(element.id==="lunbotu3"){
+				$(products).css("background","url('images/alert.png') no-repeat center 0px")
+			}
+		}
+
+		function addToShopCart() {
+			location.href="/order/addToCart?gid="+$("#goodsId").val();
+		}
+
+		function page(obj){
+			$("[name='page']").val($(obj).data("page"));
+			load();
+		}
+
+		function load() {
+			location.href = "/order/toGoodsDetail?page=" + $("[name='page']").val() + "&gid=" + $("#goodsId").val();
+		}
+    </script>  
+	<!-- //cart-js -->  
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="slimscroll-menu" th:fragment="common-slimscroll-menu">
+
+        <!-- LOGO -->
+        <a th:href="@{/toIndex(brandId=-1)}" class="logo text-center mb-4">
+                            <span class="logo-lg">
+                                <img src="http://freemuban.com/view/201810042007/images/logo2.png" th:href="@{/toIndex}" alt="" height="20">
+                            </span>
+            <span class="logo-sm">
+                                <img src="http://freemuban.com/view/201810042007/images/logo2.png" th:href="@{/toIndex}" alt="" height="24">
+                            </span>
+            <h3>FashionClub</h3>
+        </a>
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+
+            <ul class="metismenu" id="side-menu">
+
+                <li class="menu-title">Administrator</li>
+
+                <li>
+                    <a th:href="@{/admin/toIndex}">
+                        <i class="fe-airplay"></i>
+                        <!--                                    <span class="badge badge-success float-right">08</span>-->
+                        <span> Sale Performance </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="users.html" th:href="@{/admin/user}">
+                        <i class="fe-layers"></i>
+                        <span> User Management </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);">
+                        <i class="fe-briefcase"></i>
+                        <span> Components </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="#" th:href="@{/admin/brands}" class=" m-item item m-mobile-hide" >Brand</a>
+                        </li>
+                        <li>
+                            <a href="#" th:href="@{/admin/tags}" class=" m-item item m-mobile-hide" >Tag</a>
+                        </li>
+                        <li>
+                            <a href="#" th:href="@{/admin/items}" class=" m-item item m-mobile-hide" >Item</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+
+    </div>
+</body>
+</html>
